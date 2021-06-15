@@ -1,13 +1,84 @@
 import React from 'react';
 
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
+import {
+  BlogCard,
+  CardInfo,
+  ExternalLinks,
+  GridContainer,
+  HeaderThree,
+  Hr,
+  Tag,
+  TagList,
+  TitleContent,
+  UtilityList,
+  Img,
+} from './ProjectsStyles';
+import {
+  Section,
+  SectionDivider,
+  SectionTitle,
+} from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 
+/*const projectsDemo = [
+  {
+    title: 'Projeto 1',
+    description: 'O Melhor projeto de todos da internet.',
+  },
+  {
+    title: 'Projeto 2',
+    description: 'O Melhor projeto de todos da internet.',
+  },
+  {
+    title: 'Projeto 3',
+    description: 'O Melhor projeto de todos da internet.',
+  },
+  {
+    title: 'Projeto 4',
+    description: 'O Melhor projeto de todos da internet.',
+  },
+  {
+    title: 'Projeto 5',
+    description: 'O Melhor projeto de todos da internet.',
+  },
+  {
+    title: 'Projeto 6',
+    description: 'O Melhor projeto de todos da internet.',
+  },
+];*/
+
 const Projects = () => (
-  <div>
-    Projects
-  </div>
+  <Section nopadding id="projects">
+    <SectionDivider />
+    <SectionTitle main>Projetos</SectionTitle>
+    <GridContainer>
+      {projects.map(
+        ({ id, image, title, description, tags, source, visit }) => (
+          <BlogCard key={id}>
+            <Img src={image} />
+            <TitleContent>
+              <HeaderThree title>{title}</HeaderThree>
+              <Hr />
+            </TitleContent>
+            <CardInfo>{description}</CardInfo>
+
+            <div>
+              <TitleContent>Stack</TitleContent>
+              <TagList>
+                {tags.map((tag, i) => (
+                  <Tag key={i}>{tag}</Tag>
+                ))}
+              </TagList>
+            </div>
+            <UtilityList>
+              <ExternalLinks href={visit}>Code</ExternalLinks>
+              <ExternalLinks href={source}>Source</ExternalLinks>
+            </UtilityList>
+          </BlogCard>
+        )
+      )}
+    </GridContainer>
+  </Section>
 );
 
 export default Projects;
