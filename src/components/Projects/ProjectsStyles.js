@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Img = styled.img`
   width: 100%;
-  height: 100%;
+  //height: 100%;
   object-fit: cover;
   overflow: hidden;
 `;
@@ -18,7 +18,7 @@ export const GridContainer = styled.section`
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    padding-bottom: 0;
+    padding-bottom: 10px;
   }
 `;
 export const BlogCard = styled.div`
@@ -26,12 +26,16 @@ export const BlogCard = styled.div`
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 400px;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
 `;
 export const TitleContent = styled.div`
   text-align: center;
+  font-weight: 300;
+  font-size: 1.6rem;
+  padding: 1.6rem;
   z-index: 20;
   width: 100%;
 `;
