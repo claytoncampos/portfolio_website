@@ -17,13 +17,11 @@ const Hero = (props) => (
         Meu Portfólio Pessoal
       </SectionTitle>
       <SectionText>
-        Olá, me chamo Clayton, tenho 34 anos, Formado em Comércio Exterior.{' '}
-        <br /> Tenho 10 anos de experiência na área fiscal, sou apaixonado e
-        entusiasta pelo mundo da tecnologia! <br />
-        Estou em transição de carreira, buscando uma oportunidade para ingressar
-        na área de TI profissionalmente. Por ser uma pessoa muito dedicada e
-        curiosa, me apaixonei pelo mundo de TI, em especial a tudo que diz
-        respeito ao desenvolvimento e inovação.
+        Olá, me chamo Clayton, tenho 34 anos. <br />
+        Por ser uma pessoa muito dedicada e curiosa, me apaixonei pelo mundo de
+        TI, em especial a tudo que diz respeito ao desenvolvimento e inovação.
+        <br />
+        Aqui você poderá conhecer um pouco mais sobre mim.
       </SectionText>
       <Button
         onClick={() =>
