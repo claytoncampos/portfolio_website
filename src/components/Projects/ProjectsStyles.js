@@ -86,14 +86,14 @@ export const ExternalLinks = styled.a`
   color: #fff;
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
-  background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
+  background: #13adc7;
   opacity: 1;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   border-radius: 15px;
 
   &:hover {
-    background: linear-gradient(270deg, #945dd6 0%, #13adc7 100%);
+    background: #945dd6;
     opacity: 1;
     -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
