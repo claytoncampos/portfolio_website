@@ -73,7 +73,8 @@ const Timeline = () => {
         Estou em transição de carreira, buscando uma oportunidade para ingressar
         na área de TI profissionalmente.
         <br />
-        Estudo todos os dias em busca desse sonho.
+        Estudo todos os dias em busca desse sonho, aqui não falta dedicação e
+        força de vontade para ir cada vez mais além.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
