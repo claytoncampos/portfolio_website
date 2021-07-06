@@ -106,6 +106,7 @@ export const ExternalLinks = styled.a`
 
 export const TagList = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 2rem;
 `;

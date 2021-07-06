@@ -57,7 +57,6 @@ const Footer = () => {
           <SocialIcons href="https://api.whatsapp.com/send?phone=5511947049253">
             <FaWhatsapp size="3rem" />
           </SocialIcons>
-
           <SocialIcons href="https://github.com/claytoncampos">
             <AiFillGithub size="3rem" />
           </SocialIcons>

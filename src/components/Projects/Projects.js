@@ -63,13 +63,14 @@ const Projects = () => (
             <CardInfo>{description}</CardInfo>
 
             <div>
-              <TitleContent>Stack</TitleContent>
+              <TitleContent>Tecnologias</TitleContent>
               <TagList>
                 {tags.map((tag, i) => (
                   <Tag key={i}>{tag}</Tag>
                 ))}
               </TagList>
             </div>
+
             <UtilityList>
               <ExternalLinks href={visit}>Code</ExternalLinks>
               <ExternalLinks href={source}>Source</ExternalLinks>
