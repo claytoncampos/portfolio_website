@@ -26,7 +26,7 @@ const Hero = (props) => (
       <Button
         onClick={() =>
           (window.location =
-            'https://www.linkedin.com/in/clayton-almeida-campos-198732176/')
+            'https://www.linkedin.com/in/claytoncampos')
         }
       >
         Mais Informação{' '}
